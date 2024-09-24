@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AquaVision</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="slideshow-container">
+        <nav>
+            <div class="logo">AquaVision</div>
+            <ul>
+                <li><a href="{{ url_for('home') }}">Home</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Insights <span class="dropdown-icon">&#9662;</span></a>
+                    <ul class="dropdown-content">
+                        <li><a href="{{ url_for('predict') }}">GWL Prediction</a></li>
+                        
+                    </ul>
+                </li>
+                <li><a href="{{ url_for('resources') }}">Resources</a></li>
+            </ul>
+        </nav>
+
+        <!-- Slideshow -->
+        <div class="slide fade">
+            <img src="{{ url_for('static', filename='images/lab.jpg') }}" class="slide-image" alt="Groundwater 1">
+            <div class="caption-container">
+                <h2>Discover the Levels of Groundwater</h2>
+            </div>
+        </div>
+
+        <div class="slide fade">
+            <img src="{{ url_for('static', filename='images/web.jpg') }}" class="slide-image" alt="Groundwater 2">
+            <div class="caption-container">
+                <h2>Understanding Aquifer Dynamics</h2>
+            </div>
+        </div>
+
+        <div class="slide fade">
+            <img src="{{ url_for('static', filename='images/landscape-shot-small-rural-waterfall-spring-day.jpg') }}" class="slide-image" alt="Groundwater 3">
+            <div class="caption-container">
+                <h2>Safeguard Our Water Resources</h2>
+            </div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+
+    <!-- About AquaVision -->
+    <section class="content-image-section">
+        <div class="container">
+            <div class="content">
+                <h2 class="underline">About Us</h2>
+                <p>At AquaVision, we’re changing how groundwater levels are tracked and managed. Our tools and insights help communities, businesses, and decision-makers get the information they need to use and conserve water wisely.</p>
+                <p>Our team uses the latest technology and research to provide accurate forecasts and useful information. We’re working towards a future where water is managed smartly, so it’s available and clean for everyone, now and in the future.</p>
+            </div>
+            <div class="image">
+                <img src="{{ url_for('static', filename='images/dasboard.jpeg') }}" alt="About AquaVision">
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Mission -->
+    <section class="content-image-section">
+        <div class="container">
+            <div class="content">
+                <h2 class="underline">Our Mission</h2>
+                <p><strong>1. Provide reliable insights into future groundwater levels</strong> to assist farmers, policymakers, industries, and communities in making informed decisions.</p>
+                <p><strong>2. Offer accurate predictions</strong> to support sustainable water management practices, enhance agricultural productivity, ensure water availability for various needs, and contribute to environmental conservation.</p>
+                <p><strong>3. Foster a future</strong> where water resources are managed wisely for the benefit of all.</p>
+            </div>
+            <div class="image">
+                <img src="{{ url_for('static', filename='images/mission.jpg') }}" alt="Description of image">
+            </div>
+        </div>
+    </section>
+
+    <section class="offer-section">
+        <div class="underline">
+            <h2>What We Offer</h2>
+        </div>
+
+        <section class="card-section">
+            <div class="card-container">
+                <div class="card">
+                    <img src="{{ url_for('static', filename='images/forecast.jpg') }}" alt="Card 1 Image">
+                    <h3>Groundwater Level Forecasting</h3>
+                    <p>Get accurate forecasts of groundwater levels for upcoming months. Our advanced prediction model considers various hydrogeological parameters to provide reliable insights, helping you plan water usage, crops advice depending upon water level and further decision making effectively.</p>
+                </div>
+                <div class="card">
+                    <img src="{{ url_for('static', filename='images/detail.jpg') }}" alt="Card 2 Image">
+                    <h3>Data-Driven Decision Support</h3>
+                    <p>Leverage our data insights for informed decision-making. Whether it’s planning irrigation schedules, managing industrial water use, or conserving water resources, our tool offers valuable data to guide sustainable practices.</p>
+                </div>
+                <div class="card">
+                    <img src="{{ url_for('static', filename='images/visualize.jpg') }}" alt="Card 3 Image">
+                    <h3>Visual Analytics and Reporting</h3>
+                    <p>Access easy-to-understand visualizations of groundwater trends over time. Our interactive dashboards and reports make it simple to monitor groundwater levels, identify patterns, and act promptly to address water management challenges.</p>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <footer class="footer">
+        &copy; AquaVision | All rights reserved | 
+        <a href="#" style="color: skyblue;">Privacy Policy</a>
+    </footer>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

@@ -1,0 +1,274 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 10px 20px;
+    position: relative;
+    z-index: 10;
+}
+
+nav .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: blue;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+ul li {
+    position: relative;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+}
+
+ul li a:hover {
+    border-bottom: 2px solid rgb(0, 162, 255);
+}
+
+/* Dropdown Styling */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #ffffff;
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content li {
+    padding: 10px;
+}
+
+.dropdown-content li a {
+    color: #000000;
+    font-weight: bold;
+}
+
+.dropdown-content li a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Dropdown Icon */
+.dropdown-icon {
+    margin-left: 5px;
+    font-size: 0.8em;
+    color: #000000;
+}
+
+/* Slideshow Container */
+.slideshow-container {
+    position: relative;
+    max-width: 100%;
+    height: 400px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+/* Slide Images */
+.slide {
+    display: none;
+    height: 100%;
+}
+
+.slide-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Caption Styling */
+.caption-container {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Add background for better readability */
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.caption-container h2 {
+    font-size: 1.5em;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Slideshow Buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* Container Styling */
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 25px;
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+
+.content-image-section {
+    padding: 25px;
+}
+
+.content-image-section .content {
+    width: 50%;
+    line-height: 1.6; /* Adjusted line height for readability */
+    letter-spacing: 0.5px; /* Added letter spacing */
+}
+
+.content-image-section .image {
+    width: 40%;
+}
+
+.content-image-section .image img {
+    width: 100%;
+    height: 300px;
+    border-radius: 8px;
+}
+
+.content p {
+    padding-top: 20px;
+}
+
+/* About Us Section */
+.about-us {
+    letter-spacing: 0.5px; /* Added letter spacing */
+}
+
+/* Mission Section */
+.mission {
+    letter-spacing: 0.5px; /* Added letter spacing */
+}
+
+/* Offer Section */
+.offer-section {
+    text-align: left;
+    margin-bottom: 30px;
+    padding-left: 43px;
+}
+
+.underline {
+    border-bottom: 3px solid rgb(0, 162, 255);
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+/* Card Section Styling */
+.card-section {
+    display: flex;
+    justify-content: center;
+    padding: 50px 0;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    height: auto; /* Adjusted to fit content */
+    letter-spacing: 0.5px; /* Added letter spacing */
+}
+
+.card {
+    flex: 1;
+    margin: 0 15px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left; /* Aligned content to the left */
+    height: auto; /* Adjusted to fit content */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+.card img {
+    width: 100%;
+    height: 300px; /* Increased height for full-size image */
+    object-fit: cover; /* Ensure the image covers the card area */
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    margin-bottom: 10px;
+    font-size: 1.25em;
+    color: #333;
+}
+
+.card p {
+    color: #555;
+    font-size: 1em;
+    line-height: 1.6; /* Adjusted line height for better readability */
+}
+
+/* Footer Styling */
+.footer {
+    margin-top: 50px;
+    text-align: center;
+    padding: 20px; /* Increased padding for better spacing */
+    background-color: white; /* Changed background color to white */
+    color: black; /* Changed text color to black */
+    text-transform: capitalize;
+}
+
+.footer a {
+    color: blue; /* Set privacy policy link color to sky blue */
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+
+.info {
+    margin: 40px;
+}

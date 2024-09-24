@@ -1,0 +1,146 @@
+/* General page styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar styling */
+.navbar {
+    background-color: white;
+}
+
+.navbar-brand {
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+    color: #FFFFFF;
+    font-size: 16px;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #98BDFF;
+}
+
+/* Dashboard layout styling */
+.dashboard {
+    display: flex;
+ 
+    height: calc(100vh - 60px);
+}
+
+/* Sidebar styling */
+.sidebar {
+    width: 25%;
+    padding: 20px;
+    background-color: #FFFFFF;
+    border-top: 1px solid #7DA0FA;
+    border-left: 1px solid #7DA0FA;
+
+
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+
+
+/* Prediction result styling */
+.prediction-result-container {
+   padding-top: 25px;
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+}
+
+/* Crop advice styling */
+.crop-advice {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #f2f9fc;
+    /* border: 1px solid #7DA0FA; */
+    border-radius: 4px;
+    font-size: 16px;
+    color: black;
+}
+
+
+
+/* Main content styling */
+.main-content {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: #FFFFFF;
+    border-radius: 3px;
+    border-left: 1px solid #7DA0FA;
+    border-right: 1px solid #7DA0FA;
+    border-top: 1px solid #7DA0FA;
+    box-sizing: border-box;
+}
+
+/* Heading styling */
+h2 {
+    color: black;
+    font-size: 18px;
+}
+
+/* Form styling */
+form {
+    padding: 15px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Label styling */
+label {
+    display: block;
+    margin: 8px 0 4px;
+    font-weight: bold;
+    color: black;
+}
+
+/* Input and select styling */
+select,input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 5px;
+    border: 1px solid #7DA0FA;
+    border-radius: 4px;
+}
+
+
+/* Button styling */
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: blue;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 3px;
+}
+
+/* Graph container styling */
+.graphs-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.graph-container {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #7DA0FA;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow-x: auto;
+}
+
+
