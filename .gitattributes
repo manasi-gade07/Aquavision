@@ -1,0 +1,11 @@
+# Ensure programming/backend languages are counted
+*.js linguist-detectable=true
+*.jsx linguist-detectable=true
+*.py linguist-detectable=true
+*.java linguist-detectable=true
+*.sql linguist-detectable=true
+
+# Hide frontend markup & styling from language stats
+*.html linguist-vendored=true
+*.css linguist-vendored=true
+
